@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1,
+    .box2 {
+      height: 50px;
+    }
+
+    .box1 {
+      margin-bottom: 30px;
+      background: red;
+    }
+
+    .box2 {
+      margin-top: 20px;
+      background: yellow;
+    }
+
+    .box1Container {
+      /* 产生新的bfc */
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <span>外边距折叠</span>
+    <hr>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+  <hr>
+  <div>
+    <span>给box1包裹一个div，div创建一个新的bfc，使得box1跟box2不在同一个bfc</span>
+    <hr>
+    <div class="box1Container">
+      <div class="box1"></div>
+    </div>
+    <div class="box2"></div>
+  </div>
+</body>
+
+</html>

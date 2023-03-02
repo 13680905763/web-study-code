@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      background-color: burlywood;
+      /* 产生新的bfc，height为auto，根据bfc规则，有浮动元素自动撑开高度，知道能包裹浮动元素的最底部 */
+      overflow: auto;
+    }
+
+    .float {
+      float: left;
+      width: 30%;
+      height: 100px;
+      background-color: aqua;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+    <div class="float"></div>
+  </div>
+</body>
+
+</html>
