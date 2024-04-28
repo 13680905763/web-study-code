@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1-1 {
+      background-color: #999;
+      text-align: center;
+    }
+
+    .box1-2 {
+      background-color: #999;
+    }
+
+    .box1-2 div {
+      width: 300px;
+      height: 100px;
+      margin: 0 auto;
+      background-color: #fff;
+    }
+
+    .box2-1 {
+      height: 44px;
+      line-height: 44px;
+      background-color: #999;
+    }
+
+    .box3-1 {
+      height: 500px;
+      background-color: #999;
+    }
+
+    .box3-1 div {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      font-size: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <p>水平居中</p>
+  <div class="box1-1">
+    <p>text-align:center⾏内元素，⾏内块级元素和⽂本⽔平</p>
+    <img src="./img.jpg" alt="">
+  </div>
+  <hr>
+  <div class="box1-2">
+    <div> margin: 0 auto,定宽块级元素水平居中</div>
+  </div>
+  <hr>
+
+
+  <p>垂直居中</p>
+  <hr>
+  <div class="box2-1">
+    line-height与高度一样
+  </div>
+  <hr>
+
+  <p>水平垂直居中</p>
+  <p>1.父相子绝left,top50%,translate-50%,不定宽高</p>
+  <p>2.父相子绝left,right,top,bottom0,margin auto,定宽高</p>
+  <p>3.flex</p>
+  <hr>
+
+  <div class="box3-1">
+    <div></div>
+  </div>
+
+</body>
+
+</html>
